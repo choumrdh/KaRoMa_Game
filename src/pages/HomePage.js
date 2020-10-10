@@ -1,12 +1,11 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import NavBar from "../Components/NavBar/NavBar";
+import StartBtn from "../Components/StartBtn/StartBtn"
 import "../App.css";
 
 const HomePage = () => {
   return (
     <>
-      <NavBar />
       <section className="full">
         <Container maxWidth="sm">
           <img
@@ -15,6 +14,7 @@ const HomePage = () => {
           />
           <h1 className="title">Karen, coRona and Mask Game</h1>
           {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSz3X5CayuAIi6Dvqpom-U_xdRj0LIHBnoNNA&usqp=CAU" alt="mask up"/> */}
+        <StartBtn/>
         </Container>
       </section>
     </>
