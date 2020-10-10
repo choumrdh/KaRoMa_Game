@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import GameWeaponCard from "../GameWeaponCard/GameWeaponCard";
 import Counter from "../Counter/Counter";
 import GameResult from "../GameResult/GameResult";
-import SaveBtn from "../SaveBtn/SaveBtn";
+// import SaveBtn from "../SaveBtn/SaveBtn";
+import WinnngRateBtn from "../WinningRateBtn/WinningRateBtn"
 import "./Game.css";
 
 class Game extends Component {
@@ -87,12 +88,13 @@ class Game extends Component {
         onRona={this.onRona}
         onMask={this.onMask}/>
         <GameResult gameResult={this.state.gameResult}/>
-        <SaveBtn 
+        {/* <SaveBtn 
         user={this.props.user}
         playerWinCount={this.state.playerWinCount}
         computerWinCount={this.state.computerWinCount}
         totalGamePlayed={this.state.gameRound}
-        />
+        /> */}
+        <WinnngRateBtn/>
       </>
     );
   }

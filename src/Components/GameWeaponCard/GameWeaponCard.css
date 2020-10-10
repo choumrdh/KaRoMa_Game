@@ -29,3 +29,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 700px) {
+  #boxLeft {
+    flex-direction: column;
+  };
+  #boxRight{
+    flex-direction: column;
+  }
+}
