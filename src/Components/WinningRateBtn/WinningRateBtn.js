@@ -1,37 +1,28 @@
-import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-
+import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
+import WinRateResult from "./WinRateResult";
+import "./WinningRateBtn.css";
 
 class WinningRateBtn extends Component {
-    state={
-        winRate: null
-    }
-   
-    // saveData=()=>{
-    //     let newGame = {
-    //         player: this.props.user,
-    //         playerWinCount:this.props.playerWinCount,
-    //         computerWinCount: this.props.computerWinCount,
-    //         totalGamePlayed:this.props.totalGamePlayed,
-    //         winRate:this.getWinRate()
-    //     }
-    //     API.createGame({newGame}).then((res)=>{
-    //         console.log("success saving game data",res)
-    //     })
-    // }
-    getWinRate=()=>{
-        let rate =(this.props.playerWinCount/this.props.totalGamePlayed).toFixed(2)
-        let message = <h4>`Your Win Rate is ${rate}%`</h4>
-        return message
-    }
-    render() { 
-        return ( 
-            <div className="saveButton">
-                <Button variant="contained" color="secondary"
-                onClick={this.getWinRate}>See Rate</Button>
-            </div>
-         );
-    }
+  state = {
+    winRate: null,
+  };
+
+  getWinRate = () => {
+    let rate = (this.props.playerWinCount / this.props.totalGamePlayed).toFixed(2);
+    this.setState({winRate:rate})
+    console.log(this.state.winRate);
+  };
+  render() {
+    return (
+      <div className="winButton">
+        <Button variant="contained" color="secondary" onClick={this.getWinRate}>
+          Winning Rate
+        </Button>
+        <WinRateResult winRate={this.state.winRate} />
+      </div>
+    );
+  }
 }
- 
+
 export default WinningRateBtn;
