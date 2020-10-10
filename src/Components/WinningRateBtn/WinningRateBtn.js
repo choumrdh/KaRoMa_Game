@@ -3,6 +3,9 @@ import Button from '@material-ui/core/Button';
 
 
 class WinningRateBtn extends Component {
+    state={
+        winRate: null
+    }
    
     // saveData=()=>{
     //     let newGame = {
@@ -17,7 +20,9 @@ class WinningRateBtn extends Component {
     //     })
     // }
     getWinRate=()=>{
-        return (this.props.playerWinCount/this.props.totalGamePlayed).toFixed(2)
+        let rate =(this.props.playerWinCount/this.props.totalGamePlayed).toFixed(2)
+        let message = <h4>`Your Win Rate is ${rate}%`</h4>
+        return message
     }
     render() { 
         return ( 

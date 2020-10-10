@@ -3,7 +3,7 @@ import GameWeaponCard from "../GameWeaponCard/GameWeaponCard";
 import Counter from "../Counter/Counter";
 import GameResult from "../GameResult/GameResult";
 // import SaveBtn from "../SaveBtn/SaveBtn";
-import WinnngRateBtn from "../WinningRateBtn/WinningRateBtn"
+import WinRateBtn from "../WinningRateBtn/WinningRateBtn"
 import "./Game.css";
 
 class Game extends Component {
@@ -94,7 +94,10 @@ class Game extends Component {
         computerWinCount={this.state.computerWinCount}
         totalGamePlayed={this.state.gameRound}
         /> */}
-        <WinnngRateBtn/>
+        <WinRateBtn
+        playerWinCount={this.state.playerWinCount}
+        computerWinCount={this.state.computerWinCount}
+        totalGamePlayed={this.state.gameRound}/>
       </>
     );
   }
