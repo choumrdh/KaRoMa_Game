@@ -1,0 +1,9 @@
+.gameResult {
+  font-family: monospace;
+  color: blue;
+  font-size: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

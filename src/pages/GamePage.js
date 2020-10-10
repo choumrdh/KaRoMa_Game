@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import Header from "../components/Header/Header"; 
-// import Game from "../components/Game/Game";
+import Header from "../Components/Header/Header"; 
+// import Game from "../Components/Game/Game";
 // import API from "../utils/API";
 
 import Container from "@material-ui/core/Container";
@@ -16,8 +16,7 @@ const GamePage = (props) => {
 
   return (
     <Container>
-      <h1>This is gamepage</h1>
-      {/* <Header /> */}
+      <Header />
       {/* <Game 
         user={props.user, userId} 
       /> */}

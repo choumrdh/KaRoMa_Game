@@ -1,0 +1,19 @@
+.computerDisplay {
+    width:150px;
+    height:150px;
+    border-radius: 2px;
+    border-color: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardMedia img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
