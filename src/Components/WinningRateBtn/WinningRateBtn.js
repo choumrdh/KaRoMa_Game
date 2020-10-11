@@ -9,7 +9,7 @@ class WinningRateBtn extends Component {
   };
 
   getWinRate = () => {
-    let rate = (this.props.playerWinCount / this.props.totalGamePlayed).toFixed(2);
+    let rate = ((this.props.playerWinCount / this.props.totalGamePlayed)*100).toFixed(2);
     this.setState({ winRate: `Your winning rate is ${rate}%` });
   };
   render() {
