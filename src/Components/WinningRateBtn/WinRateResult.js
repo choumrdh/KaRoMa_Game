@@ -1,9 +1,11 @@
 import React from 'react';
 
 const WinRateResult = (props)=>{
+    console.log(props);
+
     return(
-        <div >
-           <h4>{props.WinRate} </h4>
+        <div className="win-rate-result">
+           <div>{props.winRate}</div>
         </div>
         
     )

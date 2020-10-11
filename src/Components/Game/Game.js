@@ -82,18 +82,13 @@ class Game extends Component {
         playerWinCount={this.state.playerWinCount}
         computerWinCount={this.state.computerWinCount}
         />
+        <GameResult gameResult={this.state.gameResult}/>
         <GameWeaponCard
         computerResult={this.state.computerResult}
         onKaren={this.onKaren}
         onRona={this.onRona}
         onMask={this.onMask}/>
-        <GameResult gameResult={this.state.gameResult}/>
-        {/* <SaveBtn 
-        user={this.props.user}
-        playerWinCount={this.state.playerWinCount}
-        computerWinCount={this.state.computerWinCount}
-        totalGamePlayed={this.state.gameRound}
-        /> */}
+        
         <WinRateBtn
         playerWinCount={this.state.playerWinCount}
         computerWinCount={this.state.computerWinCount}

@@ -10,17 +10,20 @@ class WinningRateBtn extends Component {
 
   getWinRate = () => {
     let rate = (this.props.playerWinCount / this.props.totalGamePlayed).toFixed(2);
-    this.setState({winRate:rate})
-    console.log(this.state.winRate);
+    this.setState({ winRate: `Your winning rate is ${rate}%` });
   };
   render() {
     return (
-      <div className="winButton">
-        <Button variant="contained" color="secondary" onClick={this.getWinRate}>
-          Winning Rate
-        </Button>
-        <WinRateResult winRate={this.state.winRate} />
-      </div>
+        <div className="winButton">
+          <Button
+            variant="contained"
+            color="secondary"
+            onClick={this.getWinRate}
+          >
+            Winning Rate
+          </Button>
+          <WinRateResult winRate={this.state.winRate} />
+        </div>
     );
   }
 }
