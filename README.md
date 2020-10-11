@@ -1,4 +1,4 @@
-  # Project Title: KaRoMa Game :raised_hands:
+  # Project Title: KaRoMa_Game :raised_hands:
   - A simple game made with reactjs :bulb:
   - This small project showcase on react.js and practice on Material-Ui and deployed on Netlify
   - Basic rule, Karen Beats Mask, RonaVirus Kills Karen, and MasK Blocks RonaVirus
@@ -13,7 +13,7 @@
 
  ### Contribution :handshake: 
  
- [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/choumrdh/KaRoMa Game/issues)
+ [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/choumrdh/KKaRoMa_Game/issues)
   
   #### 	Author :bust_in_silhouette:
    - Name: Michelle [![follower](https://img.shields.io/github/followers/choumrdh?label=follower&style=social)](https://github.com/choumrdh?tab=followers)
