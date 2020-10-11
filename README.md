@@ -20,7 +20,7 @@
   
   > - GitHub: [choumrdh](https://github.com/choumrdh)
   > - email: m.w.chou21@gmail.com
-  > - Netlify: 
+  > - Netlify: [KaRoMa](https://karoma-game.netlify.app/)
   
  ### License :trophy:
    - [![Copyright](https://img.shields.io/badge/Copyright-Michelle-blue)](https://github.com/choumrdh)
